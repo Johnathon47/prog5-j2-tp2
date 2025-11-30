@@ -10,9 +10,9 @@
         <module name="EmptyBlock"/>
         <module name="UnusedImports"/>
         <module name="NeedBraces"/>
-        <module name="LineLength">
-            <property name="max"
-                      value="120"/>
-        </module>
+    </module>
+    <module name="LineLength">
+        <property name="max"
+                  value="120"/>
     </module>
 </module>
