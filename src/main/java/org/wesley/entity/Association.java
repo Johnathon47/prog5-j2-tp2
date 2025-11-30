@@ -1,6 +1,6 @@
 package org.wesley.entity;
 
-public class Association implements Locationneurable{
+public class Association implements Locationneurable {
     private String name;
 
     public Association(String name) {

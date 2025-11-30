@@ -1,6 +1,6 @@
 package org.wesley.entity;
 
-public class Person implements Locationneurable{
+public class Person implements Locationneurable {
     private String name;
 
     public Person(String name) {
