@@ -1,0 +1,21 @@
+name: Java Linter (Checkstyle)
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  checkstyle:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Run Checkstyle
+        run: mvn -B checkstyle:check
